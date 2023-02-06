@@ -1,0 +1,26 @@
+﻿<Window x:Class="BMI_Rechner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMI_Rechner"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Body Mass Index Berechnen: " HorizontalAlignment="Left" Margin="337,32,0,0" VerticalAlignment="Top"/>
+        <Label Content="Gewicht " HorizontalAlignment="Left" Margin="52,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Gewicht"   HorizontalAlignment="Left" Height="23" Margin="202,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Größe: " HorizontalAlignment="Left" Margin="52,142,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Grosse"  HorizontalAlignment="Left" Height="23" Margin="202,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Geschlecht: " HorizontalAlignment="Left" Margin="43,191,0,0" VerticalAlignment="Top"/>
+        <ListBox   x:Name="Geschlecht" HorizontalAlignment="Left" Height="69" Margin="202,192,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem x:Name="m">Männlich</ListBoxItem>
+            <ListBoxItem x:Name="w">Weiblich</ListBoxItem>
+            <ListBoxItem x:Name="d">divers</ListBoxItem>
+
+        </ListBox>
+        <Button Content="Berechnen" Click="Berechnen" HorizontalAlignment="Left" Margin="125,293,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="Ausgabe" Content="Body Mass Index Berechnen: " HorizontalAlignment="Left" Margin="410,97,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="BMI" Content="Ergebnis: " HorizontalAlignment="Left" Margin="28,377,0,0" VerticalAlignment="Top" Width="751"/>
+    </Grid>
+</Window>
